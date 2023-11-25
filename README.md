@@ -7,5 +7,13 @@ volume klasörünü otomatik yaratıyor zaten eğer localde yoksa.
 
 sh certbot ile 
 1 
-yaz 
-email gir
+y
+n
+email 
+domain name
+
+Certificate is saved at: /etc/letsencrypt/live/ahmetproje.com.tr/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/ahmetproje.com.tr/privkey.pem
+
+fullchain.pem
+privkey.pem
