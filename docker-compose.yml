@@ -9,7 +9,7 @@ services:
     env_file:
       - ./apache/src/env/.env
     ports:
-      - "80:80"
+      - "8080:80"
 
   ubuntu-util:
     build: ./ubuntu_util
