@@ -1,12 +1,8 @@
 # Use the official PHP 8.0 Apache image
 FROM php:8.0-apache
 
-# Install apt and update package information
-RUN apt-get update && \
-    apt-get install -y apt
-
-# Install snap to use certbot
-RUN apt-get install -y snapd
+# Install Certbot
+RUN apt-get install -y certbot
 
 # Copy the PHP application to the container
 COPY . /var/www/html/static_Php
