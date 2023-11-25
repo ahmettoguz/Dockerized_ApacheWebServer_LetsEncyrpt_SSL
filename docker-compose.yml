@@ -19,5 +19,5 @@ services:
     volumes:
       - ./sslCertVolume:/sslCertVolume
     ports:
-      - "5000:80"
+      - "80:80"
 
