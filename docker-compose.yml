@@ -17,7 +17,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./sslCertVolume:/etc/letsencrypt/live/ahmetproje.com.tr/
+      - ./sslCertVolume:/etc/letsencrypt/live/
     ports:
       - "80:80"
 
