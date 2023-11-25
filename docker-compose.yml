@@ -1,8 +1,7 @@
 version: "3.3"
 
 volumes:
-  storageVolume:
-    driver: local
+  dataVolume:
 
 services:
   apache:
@@ -21,4 +20,4 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - storageVolume:/storageVolume
+      - ./dataVolume:/dataVolume

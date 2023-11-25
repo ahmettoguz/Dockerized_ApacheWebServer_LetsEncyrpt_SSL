@@ -44,4 +44,4 @@
 
 # REMOVE
   docker volume rm storageVolume
-  docker volume prune
+  docker volume prune -a
