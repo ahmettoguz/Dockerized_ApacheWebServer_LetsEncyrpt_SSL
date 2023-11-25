@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 # Set the working directory
-WORKDIR ~/app
+WORKDIR /app
 
 COPY ./command/ .
 
