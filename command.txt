@@ -13,8 +13,14 @@
 # DOWN & DELETE CONTAINERS (volumes are safe)
   docker-compose down
 
+# STOP CONTAINERS
+  docker-compose stop
+
 # DISPLAY CONTAINERS
   docker ps -a
+
+# GET IN CONTAINER
+  docker exec -it c-util /bin/bash
 
 # COPY FROM LOCAL 
   docker cp ./nginx/default.conf nginx-container:/

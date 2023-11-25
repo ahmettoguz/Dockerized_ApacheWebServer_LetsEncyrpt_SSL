@@ -2,6 +2,7 @@ version: "3.3"
 
 volumes:
   storageVolume:
+    driver: local
 
 services:
   apache:
