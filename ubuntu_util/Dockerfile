@@ -5,3 +5,5 @@ RUN apt-get update -y && apt-get install -y \
     sudo \
     python3 \
     python3-pip
+
+RUN pip install certbot
