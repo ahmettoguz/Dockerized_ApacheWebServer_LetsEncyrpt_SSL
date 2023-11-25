@@ -2,7 +2,7 @@
 FROM php:8.0-apache
 
 # Install Certbot
-RUN apt-get install -y certbot
+RUN apt-get install -y certbot python3-certbot-apache
 
 # Copy the PHP application to the container
 COPY . /var/www/html/static_Php
