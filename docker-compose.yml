@@ -17,4 +17,4 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./dataVolume:/dataVolume
+      - ./sslCertVolume:/sslCertVolume
