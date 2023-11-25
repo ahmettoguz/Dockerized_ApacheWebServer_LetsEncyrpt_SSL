@@ -1,24 +1,23 @@
 version: "3.3"
 
+volumes:
+  storageVolume:
+
 services:
-  php-app:
+  apache:
     build:
-      context: ./php/
+      context: ./apache/
       dockerfile: ./docker/Dockerfile
-    container_name: php-c
+    container_name: c-ssl
     env_file:
-      - ./env/php.env
-      - ./env/db.env
-    volumes:
-      # bind mount
-      - ./php/:/var/www/soci.us.to
+      - ./apache/src/env/.env
     ports:
       - "80:80"
 
-    ubuntu-util:
-      build: ./ubuntu_util
-      container_name: util-c
-      stdin_open: true
-      tty: true
-      volumes:
-        - db-v:/db-v
+  ubuntu-util:
+    build: ./ubuntu_util
+    container_name: c-util
+    stdin_open: true
+    tty: true
+    volumes:
+      - storageVolume:/storageVolume

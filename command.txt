@@ -26,27 +26,16 @@
   docker exec -it php-c /bin/bash
   docker exec -it util-c /bin/bash
 
-# MOVE FILE
-  mv default.conf ./etc/nginx/conf.d/   
-  mv default.conf ./etc/nginx/sites-available/
-
 ------------------------VOLUME------------------------
-
 # SHOW 
   docker volume ls
 
-# CREATE
-  docker volume create dynamic_php_mysql_digitalocean_db-v
+  docker volume inspect storageVolume
+  // mountpoint display the actual location of the volume
 
-# MOVE
-  docker cp example.txt my_container:/app/data
+# CREATE
+  docker volume create storageVolume
 
 # REMOVE
-  docker volume rm dynamic_php_mysql_digitalocean_db-v
+  docker volume rm storageVolume
   docker volume prune
-
-
-    
-
-
-
