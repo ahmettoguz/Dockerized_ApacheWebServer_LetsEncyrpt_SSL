@@ -1,0 +1,5 @@
+src/*
+!src/domain_Conf/
+
+# no need to add env file to host
+!src/env/.env
