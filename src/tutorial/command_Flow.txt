@@ -43,6 +43,7 @@
     $ doctl compute firewall create --name portfft --inbound-rules "protocol:tcp,ports:443,address:0.0.0.0/0"
 
 -------------------------
+TODO aşağı değişicek
 
 # CLONE CODE
     $ git clone https://github.com/ahmettoguz/Dockerized_Apache_Php_Static.git
