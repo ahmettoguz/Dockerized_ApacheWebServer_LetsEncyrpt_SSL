@@ -32,4 +32,3 @@
 
 ###########################
     service apache2 reload
-    sudo certbot --apache
