@@ -10,6 +10,7 @@
 
 # RUN CONTAINER
     docker run --rm -d -p 80:80 -p 443:443 -v ./src/certificate:/root/letsencrypt/live/ahmetproje.com.tr --env-file ./src/env/.env --name c-ssl i-ssl
+    docker run --rm -p 80:80 -p 443:443 -v ./src/certificate:/root/letsencrypt/live/ahmetproje.com.tr --env-file ./src/env/.env --name c-ssl i-ssl
     
 # GET INTO CONTAINER
     docker exec -it c-ssl /bin/bash
