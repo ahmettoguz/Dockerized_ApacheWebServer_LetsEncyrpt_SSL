@@ -1,8 +1,4 @@
-
 -------------------------
-
-# OPEN DIGITAL OCEN DROPLET
-
 # CONNECT REMOTE
     $ ssh root@<remote ip>
 
@@ -20,7 +16,6 @@
 # INSTALL DOCTL
     to be able to enable firewall settings
     $ snap install doctl
-
 -------------------------
 
 # PREPARE FIREWALL AND DOCTL FOLDER
@@ -41,22 +36,20 @@
     add rule
     $ doctl compute firewall create --name MyFirewall --inbound-rules "protocol:tcp,ports:3000,address:0.0.0.0/0"
     $ doctl compute firewall create --name portfft --inbound-rules "protocol:tcp,ports:443,address:0.0.0.0/0"
-
 -------------------------
-TODO aşağı değişicek
 
 # CLONE CODE
-    $ git clone https://github.com/ahmettoguz/Dockerized_Apache_Php_Static.git
+    $ git clone https://github.com/ahmettoguz/Dockerized_ApacheWebServer_LetsEncyrpt_SSL
 
 # CHANGE CWD
-    $ cd Dockerized_Apache_Php_Static/
+    $ cd Dockerized_ApacheWebServer_LetsEncyrpt_SSL
     
 # BUILD IMAGE
-    $ docker build -t  static-php-image .
+    $ docker build -t i-ssl .
 
 # RUN CONTAINER
                             out:in
-    $ docker run -d --rm -p 80:80 --env-file ./src/env/.env --name static-php-container static-php-image
+    $ docker run -d --rm -p 80:80 --env-file ./src/env/.env --name c-ssl i-ssl
 
 # GET IP 
     first one is the ipv4:
@@ -64,18 +57,17 @@ TODO aşağı değişicek
 
 # OPEN IN BROWSER
     <ip>:3000/static_Php
-
 --------------------------
 
 # STOP AND DELETE CONTAINER
-    $ docker stop static-php-container
+    $ docker stop c-ssl
 
     or, stop and remove all 
     $ docker stop $(docker ps -aq)
     $ docker rm $(docker ps -aq)
 
 # DELETE IMAGE
-    $ docker rmi static-php-image
+    $ docker rmi i-ssl
 
     or
     $ docker rmi $(docker images -q)
