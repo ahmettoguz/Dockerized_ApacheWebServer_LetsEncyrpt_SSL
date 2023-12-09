@@ -57,7 +57,7 @@ This project provides a development and production environment for your PHP appl
 
 * Necessary configurations should be done for domain name to point corresponding ip. From DNS provider and virtual machine, configura A and NS records.
 
-* Get certificate for your domain names (www and non-www) from following project: https://github.com/ahmettoguz/Dockerized_Certbot_LetsEncyrpt_SSL
+* Get a certificate for your domain names (www and non-www) from the following project: [Dockerized_Certbot_LetsEncyrpt_SSL](https://github.com/ahmettoguz/Dockerized_Certbot_LetsEncyrpt_SSL)
 
 * Place your certificates in certificate file with named cert.pem and privkey.pem. You can also place that keys by running placeKeys.sh.
 
@@ -65,7 +65,7 @@ This project provides a development and production environment for your PHP appl
 
 * Run docker container with following command (change domain name).
 
-```
+```bash
 docker run --rm -d -p 80:80 -p 443:443 -v ./src/certificate:/root/letsencrypt/live/ahmetproje.com.tr --env-file ./src/env/.env --name ssl-c ssl-i
 ```
 
@@ -75,11 +75,11 @@ docker run --rm -d -p 80:80 -p 443:443 -v ./src/certificate:/root/letsencrypt/li
 
 * Container and image can be terminated and deleted with following commands.
 
-```
+```bash
 docker stop ssl-c
 ```
 
-```
+```bash
 docker rmi ssl-i
 ```
 
