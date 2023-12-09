@@ -11,7 +11,7 @@
 ## Table of Contents
 
 - [Introduction](#-introduction)
-- [Technologies](#-technologies)
+- [Technologies](#technologiesHeader)
 - [Features](#-features)
 - [Prerequisites](#-prerequisites)
 - [Instructions](#-instructions)
@@ -25,7 +25,7 @@ This project provides a development and production environment for your PHP appl
 
 <br/>
 
-## ☄️ Technologies
+<h2 id="technologiesHeader">☄️Technologies</h2> 
 
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 
