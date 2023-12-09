@@ -15,7 +15,7 @@
 - [Instructions](#instructions)
 - [Technologies](#technologies)
 - [Features](#features)
-- [Contributors](#contributors)
+- [Contributors](#-contributors)
 
 <br/>
 
@@ -81,11 +81,11 @@ docker rmi ssl-i
 ## Features
 
 * Usable with Docker container without the need for Apache and PHP installation.
-* Ready to use php application with letsencyrpt ssl.
+* Ready to use PHP application with LetsEncyrpt SSL.
 
 <br/>
 
-## Contributors
+## 👥 Contributors
 
 <a href="https://github.com/ahmettoguz" target="_blank"><img width=60 height=60 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a>
 
