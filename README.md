@@ -1,25 +1,25 @@
-<h1 id="topHeader" align="center">Dockerized Apache Web Server <br/> LetsEncyrpt SSL</h1> 
+<h1 id="mainHeader" align="center">Dockerized Apache Web Server <br/> LetsEncyrpt SSL</h1> 
 
 <br>
 
 <div align="center">
-    <img width=250 src="src/img/banner.jpg">
+    <img width=230 src="src/img/banner.jpg">
 </div>
 
 <br/>
 
 ## Table of Contents
 
-- [Introduction](#-introduction)
+- [Introduction](#introductionHeader)
 - [Technologies](#technologiesHeader)
-- [Features](#-features)
-- [Prerequisites](#-prerequisites)
-- [Instructions](#-instructions)
-- [Contributors](#-contributors)
+- [Features](#featuresHeader)
+- [Prerequisites](#prerequisitesHeader)
+- [Instructions](#instructionsHeader)
+- [Contributors](#contributorsHeader)
 
 <br/>
 
-## 📌 Introduction
+<h2 id="introductionHeader">📌 Introduction</h2> 
 
 This project provides a development and production environment for your PHP application served with Apache, utilizing Let's Encrypt certificates without any installation.
 
@@ -37,14 +37,14 @@ This project provides a development and production environment for your PHP appl
 
 <br/>
 
-## ✨ Features
+<h2 id="featuresHeader">✨ Features</h2> 
 
 * Usable with Docker container without the need for Apache and PHP installation.
 * Ready to use PHP application with LetsEncyrpt SSL.
 
 <br/>
 
-## 🔒 Prerequisites
+<h2 id="prerequisitesHeader">🔒 Prerequisites</h2> 
 
 * Domain name
 
@@ -52,8 +52,7 @@ This project provides a development and production environment for your PHP appl
 
 <br/>
 
-## 📋 Instructions
-
+<h2 id="instructionsHeader">📋 Instructions</h2> 
 
 * Necessary configurations should be done for domain name to point corresponding ip. From DNS provider and virtual machine, configura A and NS records.
 
@@ -85,9 +84,9 @@ docker rmi ssl-i
 
 <br/>
 
-## 👥 Contributors
+<h2 id="contributorsHeader">👥 Contributors</h2> 
 
 <a href="https://github.com/ahmettoguz" target="_blank"><img width=60 height=60 src="https://avatars.githubusercontent.com/u/101711642?v=4"></a>
 
-[🔝](#topHeader)
+[🔝](#mainHeader)
 
