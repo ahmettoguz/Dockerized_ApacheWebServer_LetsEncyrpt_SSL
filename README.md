@@ -10,22 +10,41 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Instructions](#instructions)
-- [Technologies](#technologies)
-- [Features](#features)
+- [Introduction](#-introduction)
+- [Technologies](#-technologies)
+- [Features](#-features)
+- [Prerequisites](#-prerequisites)
+- [Instructions](#-instructions)
 - [Contributors](#-contributors)
 
 <br/>
 
-## Introduction
+## 📌 Introduction
 
 This project provides a development and production environment for your PHP application served with Apache, utilizing Let's Encrypt certificates without any installation.
 
 <br/>
 
-## Prerequisites
+## ☄️ Technologies
+
+[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+
+[![Openssl](https://img.shields.io/badge/OpenSSL-%23FFFFFF.svg?style=for-the-badge&logo=opengl)](https://www.openssl.org/)
+
+[![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)](https://httpd.apache.org/)
+
+[![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+
+<br/>
+
+## ✨ Features
+
+* Usable with Docker container without the need for Apache and PHP installation.
+* Ready to use PHP application with LetsEncyrpt SSL.
+
+<br/>
+
+## 🔒 Prerequisites
 
 * Domain name
 
@@ -33,7 +52,7 @@ This project provides a development and production environment for your PHP appl
 
 <br/>
 
-## Instructions
+## 📋 Instructions
 
 
 * Necessary configurations should be done for domain name to point corresponding ip. From DNS provider and virtual machine, configura A and NS records.
@@ -63,25 +82,6 @@ docker stop ssl-c
 ```
 docker rmi ssl-i
 ```
-
-<br/>
-
-## Technologies
-
-[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-
-[![Openssl](https://img.shields.io/badge/OpenSSL-%23FFFFFF.svg?style=for-the-badge&logo=opengl)](https://www.openssl.org/)
-
-[![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)](https://httpd.apache.org/)
-
-[![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-
-<br/>
-
-## Features
-
-* Usable with Docker container without the need for Apache and PHP installation.
-* Ready to use PHP application with LetsEncyrpt SSL.
 
 <br/>
 
