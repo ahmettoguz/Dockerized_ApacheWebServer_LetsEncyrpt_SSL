@@ -1,0 +1,5 @@
+src/*
+!src/domain_Conf
+placeKeys.sh
+README.md
+Dockerfile
